@@ -15,7 +15,7 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   margin: 50px auto;
   text-align: center;
   border: 3px solid red;
-  height: 90vh;
+  /*height: 90vh;*/
   width: 70vw;
   padding: 20px;
 }
@@ -57,7 +57,7 @@ input{
 
 button{
   width: 150px;
-  height: 45px;
+  height: 40px;
   margin-bottom: 10px;
   background-color:#FADA06;
   border-radius: 5px;
@@ -77,4 +77,43 @@ button:hover{
 
 button:active{
   opacity: 0.8;
+}
+
+
+.result{
+  font-size: 1.34em;
+  color: #FFF;
+}
+
+@media (max-width:500px){
+  .page-title{
+    background-color: #B64FA1;
+    color: #FFF;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    -webkit-box-shadow: 5px 5px 9px 1px rgba(0,0,0,0.58); 
+    box-shadow: 5px 5px 9px 1px rgba(0,0,0,0.58);
+  }
+
+  .page-logo{
+    margin-top: 10px;
+    width: 150px;
+  }
+
+  input{
+    width: calc(80%);
+  }
+
+  button{
+    width: calc(80%);
+  }
+  
+  
+}
+
+
+@media (max-width:251px){
+  .page-logo{
+    display: none;
+  }
 }
